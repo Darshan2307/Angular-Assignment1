@@ -1,0 +1,27 @@
+<div class="weather-container">
+  <h1>Weather in {{ weather?.name }}</h1>
+  <p><strong>Country:</strong> {{ weather?.sys?.country }}</p>
+  <p><strong>Temperature:</strong> {{ weather?.main?.temp }} K</p>
+  <p><strong>Feels Like:</strong> {{ weather?.main?.feels_like }} K</p>
+  <p><strong>Minimum Temperature:</strong> {{ weather?.main?.temp_min }} K</p>
+  <p><strong>Maximum Temperature:</strong> {{ weather?.main?.temp_max }} K</p>
+  <p><strong>Pressure:</strong> {{ weather?.main?.pressure }} hPa</p>
+  <p><strong>Humidity:</strong> {{ weather?.main?.humidity }}%</p>
+  <p><strong>Visibility:</strong> {{ weather?.visibility }} m</p>
+  <p><strong>Wind Speed:</strong> {{ weather?.wind?.speed }} m/s</p>
+  <p><strong>Wind Direction:</strong> {{ weather?.wind?.deg }}°</p>
+  <p><strong>Cloudiness:</strong> {{ weather?.clouds?.all }}%</p>
+  <p>
+    <strong>Weather:</strong> {{ weather?.weather[0]?.main }} ({{
+      weather?.weather[0]?.description
+    }})
+  </p>
+  <p>
+    <strong>Sunrise:</strong>
+    {{ weather?.sys?.sunrise * 1000 | date : "shortTime" }}
+  </p>
+  <p>
+    <strong>Sunset:</strong>
+    {{ weather?.sys?.sunset * 1000 | date : "shortTime" }}
+  </p>
+</div>

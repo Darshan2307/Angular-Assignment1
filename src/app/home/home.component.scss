@@ -1,0 +1,28 @@
+/* Style for the container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the heading */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style for the paragraph */
+p {
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
